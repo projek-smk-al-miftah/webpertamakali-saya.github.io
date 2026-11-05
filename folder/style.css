@@ -1,0 +1,115 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080d0a;
+    color: white;
+}
+
+header {
+    background: #101a14;
+    padding: 25px;
+    text-align: center;
+}
+
+.logo {
+    color: #19e68b;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 12px;
+}
+
+nav a:hover {
+    color: #19e68b;
+}
+
+.hero {
+    padding: 90px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #07120b, #16432b);
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: #19e68b;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    line-height: 1.8;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #19e68b;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.produk {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.produk h2 {
+    color: #19e68b;
+    margin-bottom: 30px;
+}
+
+.card {
+    display: inline-block;
+    background: #14231b;
+    padding: 20px;
+    margin: 12px;
+    border-radius: 15px;
+    width: 280px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card h3 {
+    margin: 15px;
+}
+
+.card p {
+    color: #ccc;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background: #030805;
+    color: #aaa;
+}
+
+@media(max-width: 600px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+```
