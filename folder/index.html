@@ -1,0 +1,398 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HP OPPO TERBARU</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080d0a;
+    color: white;
+}
+
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #101a13;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #20e58a;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #20e58a;
+}
+
+/* BERANDA */
+.hero {
+    min-height: 520px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 8%;
+    gap: 30px;
+    background: linear-gradient(120deg, #08130d, #17482d);
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.hero-content small {
+    color: #20e58a;
+    letter-spacing: 4px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 22px 0;
+}
+
+.hero h1 span {
+    color: #20e58a;
+}
+
+.hero p {
+    line-height: 1.8;
+    color: #d2ded5;
+}
+
+.hero img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 10px 40px #000;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    margin-top: 25px;
+    background: #20e58a;
+    color: #07150d;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* PRODUK */
+.produk {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.judul {
+    font-size: 34px;
+    color: #20e58a;
+}
+
+.subtitle {
+    margin-top: 12px;
+    color: #aaa;
+}
+
+.search {
+    margin: 35px auto;
+}
+
+.search input {
+    width: 100%;
+    max-width: 450px;
+    padding: 15px;
+    background: #14251a;
+    border: 1px solid #20e58a;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #132219;
+    border: 1px solid #244a32;
+    padding: 20px;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #20e58a;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 18px 0 10px;
+}
+
+.card p {
+    color: #bbb;
+    line-height: 1.6;
+}
+
+.harga {
+    color: #20e58a;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.beli {
+    display: block;
+    margin-top: 18px;
+    padding: 12px;
+    background: #20e58a;
+    color: #07150d;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* TENTANG */
+.tentang, .kontak {
+    padding: 75px 8%;
+    text-align: center;
+    background: #101a13;
+}
+
+.tentang p, .kontak p {
+    max-width: 700px;
+    margin: 20px auto;
+    color: #ccc;
+    line-height: 1.8;
+}
+
+/* FOOTER */
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #050805;
+    color: #999;
+    line-height: 2;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero img {
+        max-width: 100%;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">OPPO STORE</div>
+
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#produk">Produk</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+</header>
+
+<section class="hero" id="beranda">
+
+    <div class="hero-content">
+        <small>WELCOME TO OPPO STORE</small>
+
+        <h1>HP OPPO <span>TERBARU</span></h1>
+
+        <p>
+            Temukan smartphone OPPO pilihan dengan
+            desain premium, kamera berkualitas,
+            performa cepat dan teknologi modern.
+        </p>
+
+        <a href="#produk" class="btn">JELAJAHI PRODUK</a>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=700"
+         alt="Smartphone Android">
+</section>
+
+<section class="produk" id="produk">
+
+    <h2 class="judul">KOLEKSI HP OPPO</h2>
+
+    <p class="subtitle">
+        Pilihan smartphone OPPO untuk kebutuhan kamu
+    </p>
+
+    <div class="search">
+        <input type="text" id="cari"
+        placeholder="Cari HP OPPO..."
+        oninput="cariProduk()">
+    </div>
+
+    <div class="container" id="daftarProduk">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500" alt="OPPO Find Series">
+
+            <h3>OPPO Find Series</h3>
+
+            <p>Smartphone premium dengan teknologi kamera dan performa unggulan.</p>
+
+            <div class="harga">Mulai Rp8.999.000</div>
+
+            <a class="beli" href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20bertanya%20tentang%20OPPO%20Find%20Series">
+                PESAN SEKARANG
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?w=500" alt="OPPO Reno Series">
+
+            <h3>OPPO Reno Series</h3>
+
+            <p>Desain elegan, kamera jernih dan pengalaman smartphone modern.</p>
+
+            <div class="harga">Mulai Rp5.499.000</div>
+
+            <a class="beli" href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20bertanya%20tentang%20OPPO%20Reno%20Series">
+                PESAN SEKARANG
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=500" alt="OPPO A Series">
+
+            <h3>OPPO A Series</h3>
+
+            <p>Smartphone praktis dengan desain menarik untuk aktivitas sehari-hari.</p>
+
+            <div class="harga">Mulai Rp2.499.000</div>
+
+            <a class="beli" href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20bertanya%20tentang%20OPPO%20A%20Series">
+                PESAN SEKARANG
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section class="tentang" id="tentang">
+
+    <h2 class="judul">TENTANG KAMI</h2>
+
+    <p>
+        OPPO STORE merupakan website katalog smartphone
+        yang menampilkan berbagai pilihan HP OPPO.
+        Kami menghadirkan informasi produk untuk membantu
+        pengunjung menemukan smartphone yang sesuai.
+    </p>
+
+</section>
+
+<section class="kontak" id="kontak">
+
+    <h2 class="judul">HUBUNGI KAMI</h2>
+
+    <p>
+        Ingin mengetahui informasi produk atau melakukan pemesanan?
+        Silakan hubungi kami melalui WhatsApp.
+    </p>
+
+    <a href="https://wa.me/6281234567890"
+       class="btn">HUBUNGI WHATSAPP</a>
+
+</section>
+
+<footer>
+    <p>© 2026 OPPO STORE</p>
+    <p>Website HP Android Terbaru</p>
+</footer>
+
+<script>
+function cariProduk() {
+    let input = document.getElementById("cari")
+        .value.toLowerCase();
+
+    let produk = document.querySelectorAll(".card");
+
+    produk.forEach(function(item) {
+        let nama = item.querySelector("h3")
+            .textContent.toLowerCase();
+
+        item.style.display =
+            nama.includes(input) ? "block" : "none";
+    });
+}
+</script>
+
+</body>
+</html>
+```
